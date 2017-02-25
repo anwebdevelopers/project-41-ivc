@@ -1,0 +1,21 @@
+@import "bourbon";
+
+$green: #32aa82;
+$blue: #146eb4;
+//$brown: #967850;
+$brown: #b49678;
+$orange: #dc5a32;
+$gray: #3c4141;
+
+@mixin btn {
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparentize(#fff, 1);
+    border-radius: 0;
+}
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+  content: $content;
+  display: $display;
+  position: $pos;
+}

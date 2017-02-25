@@ -1,0 +1,209 @@
+.page__program {
+    margin: 4rem 0 0 0;
+}
+.page__program-title {
+    h3 {
+        margin: 0;
+        font-size: 2rem;
+        font-family: 'Bitter', sans-serif;
+    }
+}
+.page__program-conf-table {
+    margin: 1rem 0 0 0;
+}
+.page__program-conf-head {
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: $brown;
+    span {
+        display: block;
+        width: 50%;
+        padding: 1rem;
+    }
+}
+.page__program-conf-time {
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $brown;
+    border-bottom: 1px solid $brown;
+    background-color: lighten($brown, 40%);
+    text-align: center;
+}
+.page__program-conf-break {
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $gray;
+    border-bottom: 1px solid $brown;
+    background-color: lighten($gray, 65%);
+    text-align: center;
+}
+.page__program-conf-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $brown;
+}
+.page__program-conf-reporter {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 1rem;
+}
+.page__program-conf-theme {
+    width: 50%;
+    padding: 1rem;
+}
+.page__program-conf-reporter-img {
+    width: 6rem;
+    img {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+    }
+}
+.page__program-conf-reporter-box {
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0 0 0 20px;
+}
+.page__program-conf-reporter-name {
+    font-size: 1.6rem;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #000;
+}
+.page__program-conf-reporter-position {
+    margin: .5rem 0 0 0;
+    font-size: 1.4rem;
+    line-height: 1.1;
+    color: $gray;
+    p {
+        margin: .5rem 0 0 0;
+    }
+}
+.page__program-conf-theme {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #000;
+    p {
+        margin: 0;
+    }
+}
+
+.page__program-curse-table {
+    margin: 1rem 0 0 0;
+    border-top: 1px solid $brown;
+}
+.page__program-curse-head {
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: $brown;
+    span {
+        display: block;
+        padding: 1rem;
+        &:nth-child(1) {
+            flex-shrink: 0;
+            width: 13.5rem;
+            margin: 0 0 0 10.5rem;
+        }
+        &:nth-child(2) {
+            flex-grow: 1;
+        }
+    }
+}
+.page__program-curse-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $brown;
+}
+.page__program-curse-number {
+    flex-shrink: 0;
+    width: 10.5rem;
+    padding: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.2;
+}
+.page__program-curse-time {
+    flex-shrink: 0;
+    width: 13.5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    font-weight: 600;
+    color: $brown;
+}
+.page__program-curse-theme {
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 1rem;
+}
+.page__program-curse-theme-name {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    font-weight: 600;
+    p {
+        margin: 0;
+    }
+}
+.page__program-curse-theme-content {
+    font-size: 1.8rem;
+    line-height: 1.3;
+}
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+
+}
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+    .page__program-conf-head {
+        display: none;
+    }
+    .page__program-conf-item {
+        display: block;
+        text-align: center;
+    }
+    .page__program-conf-reporter {
+        display: block;
+        width: auto;
+    }
+    .page__program-conf-reporter-img {
+        margin: 0 auto;
+    }
+    .page__program-conf-reporter-box {
+        margin: 1rem 0 0 0;
+    }
+    .page__program-conf-theme {
+        width: auto;
+    }
+    .page__program-curse-head {
+        display: none;
+    }
+    .page__program-curse-item {
+        display: block;
+        text-align: center;
+    }
+    .page__program-curse-number,
+    .page__program-curse-time {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+
+}

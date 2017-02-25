@@ -1,0 +1,223 @@
+.services {
+    margin: 4rem 0 0 0;
+}
+.services_bg_white {
+    padding: 4rem 0;
+    background-color: #fff;
+    .services__title {
+        color: #000;
+    }
+}
+.services__container {
+    @extend .container;
+}
+.services__title {
+    @extend .title;
+    @extend .title_with_link;
+    margin: 0 0 2rem 0;
+}
+.services__box {
+    // margin: 2rem 0 0 0;
+    display: flex;
+    align-items: stretch;
+    // min-height: 50rem;
+}
+.services__column {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    // flex-grow: 1;
+    // align-self: stretch;
+}
+.services__inner {
+    // flex-grow: 1;
+    // align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    //height: 100%;
+}
+.services__inner_100 {
+    width: 100%;
+}
+.services__inner_50 {
+    width: 50%;
+}
+.services__item {
+    flex-grow: 1;
+    //flex-shrink: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem 0 1.5rem;
+    //margin: 0 2px 2px 0;
+    //width: 100%;
+    text-decoration: none;
+    color: #000;
+    overflow: hidden;
+    &:hover {
+        .services__item-bg {
+            transform: scale(1.1);
+        }
+    }
+}
+.services__item_margin {
+    margin: 0 1rem 1rem 0;
+}
+.services__item_big {
+    //height: 100%;
+    min-height: 54rem;
+    .services__item-bg {
+        background-position: center center;
+    }
+    .services__item-title {
+        h3 {
+            font-size: 3rem;
+        }
+    }
+}
+.services__item_small {
+    //height: 50%;
+    min-height: 27rem;
+    .services__item-bg {
+        background-position: right bottom;
+    }
+}
+.services__item_hight {
+    //height: 100%;
+    min-height: 54rem;
+}
+.services__item-bg {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .5s ease;
+}
+.services__item-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    //height: 47%;
+    min-height: 25.5rem;
+    margin: 0 0 1.5rem 0;
+    position: relative;
+    z-index: 1;
+}
+.services__item-title {
+    margin: 1.5rem 0 0 0;
+    h3 {
+        margin: 0;
+        font-size: 2rem;
+        line-height: 1.1;
+        font-family: 'Bitter', sans-serif;
+        font-weight: 600;
+    }
+}
+.services__item-category {
+    padding: 1.5rem 0 0 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.services__item-tag {
+    margin: auto 0 0 0;
+    padding: 1.5rem 0 0 0;
+    font-size: 0;
+    span {
+        display: inline-block;
+        vertical-align: top;
+        margin: .5rem .5rem 0 0;
+        padding: .3rem .8rem;
+        border-radius: .8rem;
+        background-color: $brown;
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+    strong {
+        display: inline-block;
+        vertical-align: top;
+        margin: .5rem .5rem 0 0;
+        padding: .3rem .8rem;
+        border-radius: .8rem;
+        background-color: $orange;
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+.services__item-date {
+    margin: 1.5rem 0 0 0;
+    font-size: 1.6rem;
+}
+.services__item-img {
+    flex-grow: 1;
+    position: relative;
+    z-index: 1;
+    margin: 1.5rem 0 0 0;
+    width: 100%;
+    min-height: 25.5rem;
+    //height: 47%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all .5s ease;
+}
+.services__button {
+    margin: 5rem 0 4rem 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+    .services__item-title {
+        h3 {
+            font-size: 1.7rem;
+        }
+    }
+}
+@media only screen and (max-width : 640px) {
+    .services__box {
+        flex-direction: column;
+    }
+    .services__column {
+        flex-grow: 1;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+@media only screen and (max-width : 360px) {
+    .services__column {
+        display: block;
+    }
+    .services__inner {
+        display: block;
+        width: auto;
+    }
+    .services__item {
+        //display: block;
+    }
+}
+@media only screen and (max-width : 320px) {
+
+}

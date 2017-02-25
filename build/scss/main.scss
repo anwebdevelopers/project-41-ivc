@@ -1,0 +1,178 @@
+@import "bourbon";
+@import "components/vars.scss";
+@import "components/normalize.scss";
+@import "components/fonts.scss";
+@import "components/icons.scss";
+
+input:focus::-webkit-input-placeholder {color: transparent !important}
+input:focus::-moz-placeholder          {color: transparent !important}
+input:focus:-moz-placeholder           {color: transparent !important}
+input:focus:-ms-input-placeholder      {color: transparent !important}
+textarea:focus::-webkit-input-placeholder {color: transparent !important}
+textarea:focus::-moz-placeholder          {color: transparent !important}
+textarea:focus:-moz-placeholder           {color: transparent !important}
+textarea:focus:-ms-input-placeholder      {color: transparent !important}
+
+
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+html {
+	font-size: 10px;
+}
+body {
+	position: relative;
+	min-width: 320px;
+	margin: 0;
+	padding: 0;
+	font-size: 1.6rem;
+	line-height: 1.3;
+	font-family: 'PT Sans', Verdana, sans-serif;
+	color: #000;
+	background-color: #ebf0f0;
+}
+.treatment_bg_blue {
+	background-color: lighten($blue, 58%);
+}
+.education_bg_brown {
+	background-color: lighten($brown, 38%);
+}
+.about_bg_gray {
+	background-color: lighten($gray, 72%);
+}
+.container {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.hidden {
+	display: none;
+}
+a {
+	outline: none !important;
+	color: $blue;
+}
+.button {
+	@include btn;
+	display: inline-block;
+	vertical-align: top;
+	padding: 1.4rem 3rem;
+	font-size: 1.6rem;
+	font-weight: 600;
+	color: #fff;
+	border: 1px solid $orange;
+	background-color: $orange;
+	text-align: center;
+	text-decoration: none;
+	transition: all .5s ease;
+	cursor: default;
+	&:hover, &:active, &:focus {
+        background-color: transparentize(#fff, 1);
+		color: $orange;
+    }
+}
+.button_transparent_blue {
+	background-color: transparentize(#fff, 1);
+	color: $blue;
+	border-color: $blue;
+	&:hover, &:active, &:focus {
+        background-color: $blue;
+		color: #fff;
+    }
+}
+.button_transparent_orange {
+	background-color: transparentize(#fff, 1);
+	color: $orange;
+	border-color: $orange;
+	&:hover, &:active, &:focus {
+        background-color: $orange;
+		color: #fff;
+    }
+}
+.title {
+	color: #3c4141;
+	h1 {
+		font-size: 2.5rem;
+	}
+	h2 {
+		font-size: 2rem;
+	}
+	h3 {
+		font-size: 2rem;
+	}
+	h1, h2, h3 {
+		margin: 0;
+		line-height: 1;
+		text-transform: uppercase;
+		font-family: 'Bitter', sans-serif;
+		font-weight: 600;
+	}
+}
+.title_with_link {
+	display: flex;
+	justify-content: space-between;
+	h2 {
+		flex-shrink: 1;
+	}
+    a {
+		flex-shrink: 1;
+		display: block;
+		margin: 0 0 0 2rem;
+		white-space: nowrap;
+        color: #3c4141;
+        font-size: 1.3rem;
+        transition: all .5s ease;
+        &:hover, &:active, &:focus {
+            color: lighten($orange, 20%);
+        }
+    }
+}
+//Custom Styles Here
+@import "components/header.scss";
+@import "components/header-sitemap.scss";
+@import "components/navigation.scss";
+@import "components/stock.scss";
+@import "components/services.scss";
+@import "components/news.scss";
+@import "components/slider.scss";
+@import "components/about.scss";
+@import "components/footer.scss";
+//page styles
+@import "components/sect-navigation.scss";
+@import "components/sect-undernavigation.scss";
+@import "components/serch.scss";
+@import "components/question.scss";
+@import "components/page.scss";
+@import "components/aside.scss";
+@import "components/page-program.scss";
+@import "components/gallery.scss";
+@import "components/materials.scss";
+@import "components/reviews.scss";
+@import "components/subscription.scss";
+@import "components/scheme.scss";
+@import "components/teachers.scss";
+@import "components/employees.scss";
+@import "components/page-prices.scss";
+@import "components/registration.scss";
+
+
+//popup
+@import "components/popup.scss";
+
+@import "components/colors.scss";
+@import "build/scss/components/magnific-popup.scss";
+
+//ALWAYS END
+@import "components/media.scss";
+
+//Load Libs SASS
+@import "html/libs/owl.carousel/dist/assets/owl.carousel.min";
+@import "html/libs/magnific-popup/dist/magnific-popup";
+@import "html/libs/jquery-ui-1.12.1.custom/jquery-ui.min";

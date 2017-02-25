@@ -1,0 +1,112 @@
+.stock {
+    margin: 4rem 0 0 0;
+}
+.stock__container {
+    @extend .container;
+    display: flex;
+}
+.stock__item {
+    display: flex;
+    width: 49.5%;
+    background-color: #fff;
+    &:nth-child(2n+2) {
+        margin: 0 0 0 1%;
+    }
+    text-decoration: none;
+    color: #000;
+    font-size: 0;
+    background-repeat: no-repeat;
+    background-size: 35% auto;
+}
+.stock__item-img {
+    align-self: flex-end;
+    width: 40%;
+    img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+.stock__item-content {
+    align-self: center;
+    width: 60%;
+    height: 100%;
+    padding: 3%;
+    text-align: center;
+}
+.stock__item-title {
+    h2 {
+        margin: 0;
+        font-size: 2.8rem;
+        line-height: 1;
+        font-weight: 600;
+        font-family: 'Bitter';
+        text-transform: uppercase;
+    }
+}
+.stock__item-text {
+    margin: .6rem 0 0 0;
+    font-size: 1.7rem;
+    line-height: 1;
+    font-family: 'Bitter';
+    p {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+    .stock__item-title {
+        h2 {
+            font-size: 2.2rem;
+        }
+    }
+}
+@media only screen and (max-width : 640px) {
+    .stock__container {
+        display: block;
+    }
+    .stock__item {
+        width: auto;
+        margin: 2rem 0 0 0;
+        &:nth-child(2n+2) {
+            margin: 2rem 0 0 0;
+        }
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .stock__item {
+        display: block;
+        &:nth-child(odd) {
+            .stock__item-img {
+                text-align: left;
+            }
+        }
+        &:nth-child(even) {
+            .stock__item-img {
+                text-align: right;
+            }
+        }
+
+    }
+    .stock__item-img {
+        display: block;
+        width: auto;
+    }
+    .stock__item-content {
+        display: block;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+
+}

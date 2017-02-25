@@ -1,0 +1,122 @@
+.teachers {
+    margin: 4rem 0;
+}
+.teachers__container {
+    @extend .container;
+}
+.teachers__title {
+    @extend .title;
+    color: #000;
+}
+.teachers__box {
+    margin: 2rem 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.teachers__item {
+    display: flex;
+    width: 23.25%;
+    margin: 0 2% 0rem 0;
+    padding: 2rem 0;
+    border-bottom: 1px solid $brown;
+    color: #000;
+    text-decoration: none;
+    &:nth-child(4n+4) {
+        margin: 0;
+    }
+    &:hover, &:active, &:focus {
+        .teachers__item-title {
+            color: lighten($orange, 10%);
+        }
+
+    }
+}
+.teachers__item-img {
+    flex-shrink: 0;
+    width: 6rem;
+    img {
+        max-width: 100%;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+    }
+}
+.teachers__item-box {
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0 0 0 1rem;
+}
+.teachers__item-title {
+    margin: 1rem 0 0 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.2;
+    transition: all .5s ease;
+}
+.teachers__item-text {
+    margin: 1rem 0 0 0;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    color: $gray;
+    p {
+        margin: 1rem 0 0 0;
+    }
+}
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+    .teachers__item {
+        width: 31.33%;
+        margin: 0 3% 0 0;
+        &:nth-child(4n+4) {
+            margin: 0 3% 0 0;
+        }
+        &:nth-child(3n+3) {
+            margin: 0;
+        }
+    }
+}
+
+@media only screen and (max-width : 768px) {
+
+}
+@media only screen and (max-width : 640px) {
+    .teachers__item {
+        width: 48%;
+        margin: 0 4% 0 0;
+        &:nth-child(4n+4) {
+            margin: 0 4% 0 0;
+        }
+        &:nth-child(3n+3) {
+            margin: 0 4% 0 0;
+        }
+        &:nth-child(2n+2) {
+            margin: 0;
+        }
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .teachers__box {
+        display: block;
+    }
+    .teachers__item {
+        width: auto;
+        margin: 0;
+        &:nth-child(4n+4) {
+            margin: 0;
+        }
+        &:nth-child(3n+3) {
+            margin: 0;
+        }
+        &:nth-child(2n+2) {
+            margin: 0;
+        }
+    }
+}
+
+@media only screen and (max-width : 320px) {
+
+}

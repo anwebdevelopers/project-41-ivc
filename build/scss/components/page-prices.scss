@@ -1,0 +1,142 @@
+.page__prices {
+    margin: 2rem 0 0 0;
+}
+.page__prices-item {
+    margin: 1rem 0 0 0;
+    padding: 1rem;
+    border: 1px solid lighten($blue, 40%);
+    background-color: #fff;
+    cursor: default;
+    &.active {
+        .page__prices-title {
+            &:before {
+                transform: translateY(-10%) rotate(-135deg);
+            }
+        }
+    }
+}
+.page__prices-title {
+    position: relative;
+    padding: 0 3rem 0 0;
+    font-size: 1.6rem;
+    line-height: 1;
+    font-weight: 600;
+    color: $blue;
+    &:before {
+        content: '';
+        position: absolute;
+        right: .5rem;
+        top: 50%;
+        transform: translateY(-80%) rotate(45deg);
+        width: 1.7rem;
+        height: 1.7rem;
+        border-right: 1px solid $green;
+        border-bottom: 1px solid $green;
+        transition: all .3s ease;
+    }
+}
+.page__prices-table {
+    margin: 1.5rem 0 0 0;
+}
+.page__prices-table-head {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: 600;
+    background-color: lighten($blue, 50%);
+    span {
+        display: block;
+        padding: 1rem;
+    }
+    span {
+        &:nth-child(1) {
+            width: 30%;
+        }
+    }
+    span {
+        &:nth-child(2) {
+            width: 20%;
+            text-align: center;
+        }
+    }
+    span {
+        &:nth-child(3) {
+            width: 50%;
+            text-align: center;
+        }
+    }
+}
+.page__prices-table-row {
+    display: flex;
+    border-bottom: 1px solid lighten($blue, 40%);
+    &:last-child() {
+        border-bottom: none;
+    }
+}
+.page__prices-table-name {
+    width: 30%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    line-height: 1.1;
+}
+.page__prices-table-cost {
+    width: 20%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    line-height: 1.1;
+    text-align: center;
+}
+.page__prices-table-note {
+    width: 50%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    line-height: 1.1;
+}
+
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+    .page__prices-table-name {
+        font-size: 1.4rem;
+    }
+    .page__prices-table-cost {
+        font-size: 1.4rem;
+    }
+    .page__prices-table-note {
+        font-size: 1.4rem;
+    }
+}
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+    .page__prices-table-head {
+        span {
+            padding: 1rem .5rem;
+        }
+    }
+    .page__prices-table-name {
+        padding: 1rem .5rem;
+        font-size: 1.2rem;
+    }
+    .page__prices-table-cost {
+        padding: 1rem .5rem;
+        font-size: 1.2rem;
+    }
+    .page__prices-table-note {
+        padding: 1rem .5rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+
+}

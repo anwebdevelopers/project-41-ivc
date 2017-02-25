@@ -1,0 +1,111 @@
+.icon-g, .icon-info, .icon-m, .icon-mail, .icon-odn, .icon-place, .icon-serch, .icon-tw, .icon-vk, .icon-fb, .icon-login, .ivc_mva_education, .icon-flag, .icon-hand, .icon-man, .icon-cross, .icon-date{
+	background: url(sprites.png) no-repeat;
+}
+
+.icon-g{
+	background-position: 0 -281px ;
+	width: 34px;
+	height: 34px;
+}
+
+.icon-info{
+	background-position: 0 -25px ;
+	width: 20px;
+	height: 20px;
+}
+
+.icon-m{
+	background-position: 0 -321px ;
+	width: 34px;
+	height: 34px;
+}
+
+.icon-mail{
+	background-position: 0 -76px ;
+	width: 20px;
+	height: 14px;
+}
+
+.icon-odn{
+	background-position: 0 -241px ;
+	width: 34px;
+	height: 34px;
+}
+
+.icon-place{
+	background-position: 0 -49px ;
+	width: 16px;
+	height: 21px;
+}
+
+.icon-serch{
+	background-position: 0 -94px ;
+	width: 20px;
+	height: 20px;
+}
+
+.icon-tw{
+	background-position: 0 -161px ;
+	width: 34px;
+	height: 34px;
+}
+
+.icon-vk{
+	background-position: 0 -201px ;
+	width: 34px;
+	height: 34px;
+}
+
+.icon-fb{
+	background-position: 0 -122px ;
+	width: 34px;
+	height: 34px;
+}
+
+.icon-login{
+	background-position: 0 0;
+	width: 20px;
+	height: 20px;
+}
+
+.ivc_mva_education{
+	background-position: 0 -362px ;
+	width: 56px;
+	height: 56px;
+}
+
+.icon-flag{
+	background-position: 0 -494.00001525878906px ;
+	width: 30px;
+	height: 30px;
+}
+
+.icon-hand{
+	background-position: 0 -529.0000152587891px ;
+	width: 30px;
+	height: 30px;
+}
+
+.icon-man{
+	background-position: 0 -563.0000152587891px ;
+	width: 30px;
+	height: 30px;
+}
+
+.icon-cross{
+	background-position: 0 -423.00001525878906px ;
+	width: 30px;
+	height: 30px;
+}
+
+.icon-date{
+	background-position: 0 -459.00001525878906px ;
+	width: 30px;
+	height: 30px;
+}
+
+.icon-download{
+	background-position: 0 -681.0000152587891px ;
+	width: 50px;
+	height: 47px;
+}
