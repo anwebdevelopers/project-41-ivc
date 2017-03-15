@@ -83,10 +83,16 @@
                 &:after {
                     border-color: darken($orange, 10%);
                 }
+                &.selected {
+                    color: #fff;
+                    background-color: $orange;
+                }
             }
             &.selected {
+                color: #fff;
                 background-color: $orange;
             }
+
         }
     }
     .serch__filter-intensive {

@@ -160,7 +160,7 @@ window.onload = function() {
     var $serchFilterSection = $(".serch__filter-section"),
         $serchFilterLine = $('.serch__filter-line'),
         $serchFilterButtons = $('.serch__filter-buttons');
-
+    $('.serch__filter-reset').hide();
     $serchFilterSection.hide();
     $serchFilterButtons.on('click', 'button', function(e) {
         e.stopPropagation();
@@ -174,6 +174,29 @@ window.onload = function() {
             $this.removeClass('active');
             $serchFilterSection.slideUp(300);
         }
+    });
+
+    $(".serch__filter-section").on('click', '.serch__filter-button button', function() {
+        if ($(this).closest('.serch__filter-button').prev('.serch__filter-section-box').find('input').is(':checked')) {
+            $('.serch__filter-buttons button').eq($(this).closest('.serch__filter-section').index()).removeClass('active').addClass('selected');
+            $('.serch__filter-line').removeClass('disabled');
+            $('.serch__filter-reset').fadeIn(300);
+            $(".serch__filter-section").slideUp(300);
+
+        }
+    });
+
+    $('.serch__filter-buttons').on('click', 'button.selected i', function() {
+        $(this).closest('button').removeClass('selected');
+        if(!$('.serch__filter-buttons').find('button').hasClass('selected')) {
+            $('.serch__filter-reset').fadeOut(300);
+        }
+    });
+
+    $('.serch__filter-reset').click(function() {
+        $('.serch__filter-buttons button').removeClass('selected');
+        $('.serch__filter-check input').prop( "checked", false );
+        $(this).fadeOut(300);
     });
 
     $(document).on('click', function(e) {
@@ -302,7 +325,7 @@ window.onload = function() {
     //-----------------------------------------------------
     var $pagePricesItem = $('.page__prices-item'),
         $pagePricesTable = $('.page__prices-table');
-        
+
     $pagePricesItem.removeClass('active');
     $pagePricesTable.hide();
 
