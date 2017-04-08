@@ -381,11 +381,12 @@
     .page__leaders-item {
         width: 32%;
         margin: 0 2% 1rem 0;
-        &:nth-child(3n+3) {
-            margin: 0 0 1rem 0;
-        }
+
         &:nth-child(2n+2) {
             margin: 0 2% 1rem 0;
+        }
+        &:nth-child(3n+3) {
+            margin: 0 0 1rem 0;
         }
     }
 }

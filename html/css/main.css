@@ -3072,11 +3072,6 @@ a {
   font-size: 1.8rem;
   line-height: 1;
   font-weight: 600;
-}
-.sect-navigation__menu ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3085,11 +3080,18 @@ a {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-.sect-navigation__menu ul li {
+.sect-navigation__menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   width: 31%;
-  margin: 1.2rem 3.5% 0 0;
+  margin: 0 3.5% 0 0;
 }
-.sect-navigation__menu ul li:nth-child(3n+3) {
+.sect-navigation__menu ul:nth-child(3n+3) {
+  margin: 0;
+}
+.sect-navigation__menu ul li {
+  display: block;
   margin: 1.2rem 0 0 0;
 }
 .sect-navigation__menu ul li a {
@@ -3199,15 +3201,15 @@ a {
     width: 43%;
     margin: 0 0 0 3%;
   }
-  .sect-navigation__menu ul li {
+  .sect-navigation__menu ul {
     width: 48%;
-    margin: 1.2rem 4% 0 0;
+    margin: 0 4% 0 0;
   }
-  .sect-navigation__menu ul li:nth-child(3n+3) {
-    margin: 1.2rem 4% 0 0;
+  .sect-navigation__menu ul:nth-child(3n+3) {
+    margin: 0 4% 0 0;
   }
-  .sect-navigation__menu ul li:nth-child(2n+2) {
-    margin: 1.2rem 0 0 0;
+  .sect-navigation__menu ul:nth-child(2n+2) {
+    margin: 0 0 0 0;
   }
 }
 
@@ -3234,15 +3236,15 @@ a {
 }
 
 @media only screen and (max-width: 480px) {
-  .sect-navigation__menu ul {
+  .sect-navigation__menu {
     display: block;
   }
-  .sect-navigation__menu ul li {
+  .sect-navigation__menu ul {
     width: auto;
-    margin: 1.2rem 0 0 0;
+    margin: 0;
   }
-  .sect-navigation__menu ul li:nth-child(3n+3) {
-    margin: 1.2rem 0 0 0;
+  .sect-navigation__menu ul:nth-child(3n+3) {
+    margin: 0;
   }
 }
 
@@ -3515,8 +3517,13 @@ a {
 .serch_bg_brown .serch__filter-buttons button.active:after {
   border-color: #bb4420;
 }
+.serch_bg_brown .serch__filter-buttons button.active.selected {
+  color: #fff;
+  background-color: #dc5a32;
+}
 
 .serch_bg_brown .serch__filter-buttons button.selected {
+  color: #fff;
   background-color: #dc5a32;
 }
 
@@ -4882,11 +4889,11 @@ a {
     width: 32%;
     margin: 0 2% 1rem 0;
   }
-  .page__leaders-item:nth-child(3n+3) {
-    margin: 0 0 1rem 0;
-  }
   .page__leaders-item:nth-child(2n+2) {
     margin: 0 2% 1rem 0;
+  }
+  .page__leaders-item:nth-child(3n+3) {
+    margin: 0 0 1rem 0;
   }
 }
 

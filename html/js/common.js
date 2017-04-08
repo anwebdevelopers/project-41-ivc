@@ -186,10 +186,12 @@ window.onload = function() {
         }
     });
 
-    $('.serch__filter-buttons').on('click', 'button.selected i', function() {
+    $('.serch__filter-buttons').on('click', 'button.selected i', function(e) {
+        e.stopPropagation();
         $(this).closest('button').removeClass('selected');
         if(!$('.serch__filter-buttons').find('button').hasClass('selected')) {
             $('.serch__filter-reset').fadeOut(300);
+            $(".serch__filter-section").eq($(this).closest('button').index()).find('.serch__filter-check input').prop( "checked", false );
         }
     });
 
